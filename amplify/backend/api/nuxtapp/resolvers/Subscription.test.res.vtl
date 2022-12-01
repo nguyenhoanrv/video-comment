@@ -1,0 +1,18 @@
+## [Start] Subscription Response template. **
+$extensions.setSubscriptionFilter({
+"filterGroup": [
+    {
+      "filters" : [
+        {
+          "fieldName" : "userID",
+          "operator" : "eq",
+          "value" : $ctx.args.userID
+        },
+      ]
+        
+    },
+  ]
+})
+
+$util.toJson(null)
+## [End] Subscription Response template. **
